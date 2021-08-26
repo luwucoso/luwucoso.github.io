@@ -1,19 +1,11 @@
 <h1 style="color:darkviolet; text-align:center;" id="txt">this is dark violet!</h1>
 
 <script>
-var cpt = true;
+var cpt = 0;
 function myfunction() {
-    if (cpt == true) {
-        document.getElementById('txt').innerHTML="this is not dark violet!";
-        document.getElementById('txt').style.color = "blue";
-        cpt = false;
-    }
-    if (cpt == false) {
-        document.getElementById('txt').innerHTML="this is dark violet!";
-        document.getElementById('txt').style.color = "darkviolet";
-        cpt = true;
-    }
+    
 }
 </script>
 
-<button style="text-align:center;" onClick="myfunction();">change color</button>
+<button style="text-align:center;" onClick="document.getElementById('txt').style.color='blue';
+ document.getElementById('txt').innerHTML='this is not dark violet'">change color</button>
